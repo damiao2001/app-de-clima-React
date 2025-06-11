@@ -32,3 +32,30 @@ Para projetos maiores ou em produção, recomenda-se usar TypeScript com valida�
 
 🚀 Objetivo
 Este projeto foi criado com fins didáticos por um desenvolvedor iniciante, com o objetivo de aplicar conceitos aprendidos em React, consumo de APIs e organização de um projeto frontend real.
+
+🔐 Configuração do .env
+Este projeto utiliza variáveis de ambiente para armazenar as chaves das APIs e URLs utilizadas, garantindo mais segurança e organização.
+Você deve criar um arquivo chamado .env na raiz do projeto com o seguinte conteúdo:
+
+env
+Copiar
+Editar
+# Chave da sua API do OpenWeather
+VITE_OPENWEATHER_KEY=SUA_KEY_AQUI
+
+# Endpoint da API de Autocomplete de Cidades (geolocalização)
+VITE_CITY_API_URL=https://api.openweathermap.org/geo/1.0/direct
+
+# Endpoint da API de Clima Atual
+VITE_WEATHER_API_URL=https://api.openweathermap.org/data/2.5/weather
+
+# Endpoint da API de Previsão do Tempo (opcional, ainda não implementado)
+VITE_FORECAST_API_URL=https://api.openweathermap.org/data/2.5/forecast
+🔎 Onde conseguir a VITE_OPENWEATHER_KEY?
+Você pode obter uma chave gratuita da OpenWeather em:
+🔗 https://openweathermap.org/api
+
+⚠️ Importante:
+Nunca suba o arquivo .env para o GitHub. Ele deve estar listado no .gitignore (o Vite já ignora isso por padrão).
+
+Substitua SUA_KEY_AQUI pela sua chave real da API.
